@@ -24,7 +24,7 @@ export default function Header({ title, showCancel = true }: HeaderProps) {
       <Text style={styles.title}>{title}</Text>
 
       {showCancel ? (
-        <BorderlessButton onPress={() => {}}>
+        <BorderlessButton onPress={navigateToOrphanagesMap}>
           <Feather name="x" size={24} color="#ff669d" />
         </BorderlessButton>
       ) : (

@@ -1,11 +1,12 @@
 import React from 'react';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { useFonts } from 'expo-font';
 import {
   Nunito_600SemiBold,
   Nunito_700Bold,
   Nunito_800ExtraBold,
 } from '@expo-google-fonts/nunito';
+import { StatusBar } from 'expo-status-bar';
 
 import Routes from './src/routes';
 
@@ -21,14 +22,15 @@ export default function App() {
   }
 
   return (
-    <SafeAreaView style={styles.container}>
+    <>
       <Routes />
-    </SafeAreaView>
+      <StatusBar style="dark" />
+    </>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//   },
+// });
