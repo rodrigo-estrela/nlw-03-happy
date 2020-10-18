@@ -41,8 +41,8 @@ export default function OrphanagesMap() {
         provider={PROVIDER_GOOGLE}
         style={styles.map}
         initialRegion={{
-          latitude: -23.6451019,
-          longitude: -46.952834,
+          latitude: -23.5854958,
+          longitude: -46.7647233,
           latitudeDelta: 0.008,
           longitudeDelta: 0.008,
         }}
